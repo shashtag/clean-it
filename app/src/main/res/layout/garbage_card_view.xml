@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="180dp"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="30dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/landmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_view"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="20dp"
+            android:textSize="17sp"
+            android:text="Landmark" />
+
+        <TextView
+            android:id="@+id/remarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/landmark"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="9dp"
+            android:text="Remarks"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+</layout>

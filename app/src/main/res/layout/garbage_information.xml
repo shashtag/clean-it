@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:id="@+id/text_view_view_complaint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Complaint"
+            android:textSize="29sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/add_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_img"
+            android:layout_below="@id/text_view_view_complaint"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/landmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Landmark"
+            android:layout_below="@id/add_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remarks (Optional)"
+            android:layout_below="@id/landmark"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="24sp"/>
+
+        <Button
+            android:id="@+id/view_on_map"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/remark"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="16dp"
+            android:text="View on Map"
+            android:textAllCaps="false"
+            app:cornerRadius="24dp" />
+
+        <Button
+            android:id="@+id/delete_complaint"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/view_on_map"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:text="Delete Complaint"
+            android:textAllCaps="false"
+            app:cornerRadius="24dp" />
+
+    </RelativeLayout>
+</layout>

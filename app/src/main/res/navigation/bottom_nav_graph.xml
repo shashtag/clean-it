@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/fragment1">
+
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.lsm.BottomNavFragments.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.lsm.BottomNavFragments.AddComplaintFragment"
+        android:label="AddComplaintFragment" />
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.example.lsm.BottomNavFragments.YourComplaintFragment"
+        android:label="YourComplaintFragment" />
+</navigation>

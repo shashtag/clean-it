@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".BottomNavFragments.HomeFragment">
+
+        <TextView
+            android:id="@+id/garbage_near_you_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Garbage near you"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/garbage_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/garbage_near_you_text_view"
+            tools:listitem="@layout/garbage_card_view"
+            android:layout_marginTop="20dp" />
+
+    </RelativeLayout>
+</layout>

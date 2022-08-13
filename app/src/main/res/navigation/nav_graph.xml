@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.example.lsm.SplashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreen_to_signUp"
+            app:destination="@id/signUp"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.example.lsm.SignUp"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUp_to_authentication"
+            app:destination="@id/authentication"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/authentication"
+        android:name="com.example.lsm.Authentication"
+        android:label="fragment_authentication"
+        tools:layout="@layout/fragment_authentication" >
+        <action
+            android:id="@+id/action_authentication_to_verification2"
+            app:destination="@id/verification2" />
+    </fragment>
+    <fragment
+        android:id="@+id/verification2"
+        android:name="com.example.lsm.Verification"
+        android:label="fragment_verification"
+        tools:layout="@layout/fragment_verification" >
+        <action
+            android:id="@+id/action_verification2_to_homeScreen2"
+            app:destination="@id/homeScreen2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeScreen2"
+        android:name="com.example.lsm.HomeScreen"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" />
+    <fragment
+        android:id="@+id/yourComplaintFragment"
+        android:name="com.example.lsm.BottomNavFragments.YourComplaintFragment"
+        android:label="YourComplaintFragment" >
+        <action
+            android:id="@+id/action_yourComplaintFragment_to_garbageInformation"
+            app:destination="@id/garbageInformation" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.lsm.BottomNavFragments.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_garbageInformation"
+            app:destination="@id/garbageInformation" />
+    </fragment>
+    <fragment
+        android:id="@+id/garbageInformation"
+        android:name="com.example.lsm.GarbageInformation"
+        android:label="GarbageInformation" />
+</navigation>
